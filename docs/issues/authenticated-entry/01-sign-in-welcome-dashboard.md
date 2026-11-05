@@ -8,7 +8,7 @@ Allow a returning user to log in through the existing backend and enter the prot
 
 ## Acceptance criteria
 
-- [ ] `/login` accepts an email and password and submits them to the backend login endpoint at `http://localhost:3000/api/v1/login`.
+- [ ] `/login` accepts an email and password and submits them to the backend login endpoint at `http://localhost:3000/api/v1/auth/login`.
 - [ ] A successful login establishes a session without exposing the access token to browser JavaScript, then redirects to `/dashboard`.
 - [ ] `/dashboard` obtains the authenticated user's details from `http://localhost:3000/api/v1/users/me` and displays `Welcome, {name}` on a black screen.
 - [ ] Accessing `/dashboard` with no token, an invalid token, or an expired token clears the local session and redirects to `/login`.
